@@ -1,8 +1,8 @@
 def call(Map stageParams)
 {  
-  withDockerContainer(image: stageParams)
+  withDockerContainer(image: stageParams.img)
      { 
-         sh "mvn clean install"
+         
      }
 }
   
