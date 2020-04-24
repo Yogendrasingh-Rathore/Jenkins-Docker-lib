@@ -1,5 +1,8 @@
 def call(Map stageParams)
 {  
-s
+  withDockerContainer(image: stageParams.image)
+     { 
+         
+     }
 }
   
