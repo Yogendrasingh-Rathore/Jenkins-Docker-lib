@@ -7,7 +7,7 @@ pipeline {
       stage('Docker Container') {
           steps{
              script {
-              docker-lib.call "nginx"
+              dockerlib.call "nginx"
              }
           }
       }
